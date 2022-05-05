@@ -1,0 +1,18 @@
+#включить <iostream>
+использование пространства имен std;
+
+// Сборка: g ++ -std=c ++ 11 08.1.cpp -о линь
+// Run: ./linh
+
+int main() {
+    попробуй {
+ cout << "Введите два числа: ";
+        двойной a, b;
+ cin >> a >> b;
+ cout << "Результат: " << a << "/" << b << " = " << a / b << endl;
+    }
+    catch (exception& e) {
+        cout << "Error: " << e.what() << endl;
+    }
+    return 0;
+}

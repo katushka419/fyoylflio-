@@ -1,0 +1,38 @@
+
+#включить <iostream>
+#включить <string>
+использование пространства имен std;
+
+string LOGIN = "linh";
+string PASSW = "123456";
+
+void submit(const string login) {
+    int times = 3;
+ строка pwd;
+    в то время как (раз--) {
+ cout << "Пароль: ";
+ cin >> pwd;
+        if (PASSW.compare(pwd) == 0)
+            бросок истинный;
+    }
+    бросок false;
+}
+
+int main() {
+ вход в строку; 
+    делать {
+ cout << "Логин: ";
+ cin >> войти;
+ } while (LOGIN.compare(login) != 0);
+        
+    попробуй {
+       отправить(войти); 
+ } catch (bool e) {
+        если (e)
+ cout << "Вход успешен" << endl;
+        ещё
+ cout << "Login failed" << endl;
+    }
+    возврат 0;
+}
+
